@@ -12,7 +12,7 @@ int main(void)
 	ssize_t len;
 
 	len = syscall(SYS_write, STDERR_FILENO, message, 59);
-	(void)len;
+	(void) len;
 
 	return (1);
 }
