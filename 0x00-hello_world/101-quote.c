@@ -1,5 +1,5 @@
+#include <stdio.h>
 #include <unistd.h>
-#include <sys/syscall.h>
 
 /**
  * main - Entry point of the program
