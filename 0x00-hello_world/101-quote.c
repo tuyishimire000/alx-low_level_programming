@@ -1,11 +1,10 @@
-#include<stdio.h>
 #include <unistd.h>
 #include <sys/syscall.h>
 
 /**
  * main - Entry point of the program
  *
- * Return: Always 1 
+ * Return: Always 1
  */
 int main(void)
 {
