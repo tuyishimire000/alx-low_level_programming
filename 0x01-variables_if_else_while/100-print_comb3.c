@@ -4,10 +4,10 @@
  * main - Entry point
  *
  * Description: Prints all possible combinations of two digits.
- * Digits are separated by comma and space.
+ * Comma and space separate the digits.
  * Digits must be different.
  * 01 and 10 are considered the same combination.
- * Prints the smallest combination first.
+ * Smallest combination is printed first.
  * Digits are printed in ascending order.
  * Uses putchar function.
  *
@@ -17,22 +17,22 @@ int main(void)
 {
 	int i, j;
 
-	/* Outer loop for the first digit */
 	for (i = 0; i < 10; i++)
 	{
-		/* Inner loop for the second digit */
 		for (j = i + 1; j < 10; j++)
 		{
 			putchar(i + '0');
 			putchar(j + '0');
-			putchar(',');
-			putchar(' ');
+
+			/* Print comma and space if not last combination */
+			if (!(i == 8 && j == 9))
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 
-	/* Removing the last comma and space */
-	putchar('\b');
-	putchar('\b');
 	putchar('\n');
 
 	return 0;
