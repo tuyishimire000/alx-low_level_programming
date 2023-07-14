@@ -26,15 +26,18 @@ int main(void)
 				putchar(i + '0');
 				putchar(j + '0');
 				putchar(k + '0');
-				putchar(',');
-				putchar(' ');
 
-				/* Check if last combination reached */
-				if (i == 9 && j == 8 && k == 7)
-					putchar('\n');
+				/* Print comma and space if not the last combination */
+				if (!(i == 7 && j == 8 && k == 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
+
+	putchar('\n');
 
 	return (0);
 }
