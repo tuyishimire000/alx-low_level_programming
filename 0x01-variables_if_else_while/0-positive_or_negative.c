@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <limits.h>
 
 /**
  * main - Entry point of the program
@@ -16,7 +17,7 @@ int main(void)
 
     srand(time(0)); /* Seed the random number generator with the current time */
 
-    n = rand() % (2 * RAND_MAX + 1) - RAND_MAX; /* Assign a random number to n */
+    n = rand() % (INT_MAX - INT_MIN + 1) + INT_MIN; /* Assign a random number to n */
 
     printf("The number %d is ", n);
 
