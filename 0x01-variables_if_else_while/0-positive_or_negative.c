@@ -1,30 +1,26 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
 
-/**
- * main - Entry point of the program
- *
- * Description: Assigns a random number to the variable n and prints whether
- *              the number is positive, negative, or zero.
- *
- * Return: Always 0 (Success)
- */
+/* Entry point 
+ * generate random number
+ * check whether number is positive or negative or whether it'sequal to zero
+ * print the value of the number 
+ * give the conclusion as the out put 
+ * return 0 always */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	printf("The number %d is ", n);
-
-	if (n > 0)
-		printf("positive\n");
-	else if (n < 0)
-		printf("negative\n");
-	else
-		printf("zero\n");
-
+	printf("%d",n);
+	if (n>0){
+		printf("is positive");
+	}else if(n==0){
+	        printf("is zero");
+	}else{
+	        printf("is negative");
+	}
 	return (0);
 }
