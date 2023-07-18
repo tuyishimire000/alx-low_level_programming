@@ -13,6 +13,5 @@ if (num < 0)
 num = num * (-1);
 }
 last_digit = num % 10;
-_putchar (last_digit);
 return (last_digit);
 }
