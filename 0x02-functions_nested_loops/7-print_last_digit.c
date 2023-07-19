@@ -14,7 +14,5 @@ num = num * (-1);
 }
 last_digit = num % 10;
 _putchar('0' + last_digit);
-_putchar('0' + last_digit);
-_putchar('\n');
 return (last_digit);
 }
