@@ -12,8 +12,18 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 int result = i * j;
-printf("%d ", result);
+if (result >= 10)
+{
+_putchar('0' + result / 10);
+_putchar('0' + result % 10);
 }
-printf("\n");
+else
+{
+_putchar('0' + result);
+}
+_putchar(' ');
+}
+_putchar('\n');
 }
 }
+
